@@ -28,7 +28,9 @@ export default function Home() {
           </h1>
           <div className="mt-10">
             <a
-              href="mailto:rhythms.sharma@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=rhythms.sharma@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block border-4 border-ink px-6 py-3 font-black text-base uppercase bg-pink text-paper shadow-[6px_6px_0_#0C0F0A] hover:shadow-[9px_9px_0_#0C0F0A] hover:translate-x-[-3px] hover:translate-y-[-3px] transition-all"
             >
               LET&apos;S CREATE SOMETHING EXTRAORDINARY →
@@ -151,7 +153,9 @@ export default function Home() {
           </h2>
           <div className="flex flex-wrap gap-4">
             <a
-              href="mailto:rhythms.sharma@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=rhythms.sharma@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="border-4 border-paper px-8 py-4 font-black text-base uppercase shadow-[4px_4px_0_#FF206E] hover:bg-pink hover:border-pink hover:shadow-[6px_6px_0_#FBFF12] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all"
             >
               EMAIL ME →

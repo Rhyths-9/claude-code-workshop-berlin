@@ -2,8 +2,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Your Name — Portfolio",
-  description: "Personal portfolio site",
+  title: "Rhythm Sharma — Visual Designer",
+  description: "Visual & UI/UX Designer crafting intuitive digital experiences",
 };
 
 export default function RootLayout({
@@ -13,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="font-sans antialiased">{children}</body>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }

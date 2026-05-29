@@ -5,12 +5,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ink: "#0f0f0f",
-        paper: "#fafaf7",
-        accent: "#3b82f6",
+        ink: "#0C0F0A",
+        paper: "#FFFFFF",
+        pink: "#FF206E",
+        yellow: "#FBFF12",
+        teal: "#41EAD4",
       },
       fontFamily: {
-        sans: ["ui-sans-serif", "system-ui", "sans-serif"],
+        sans: ["Arial", "Helvetica Neue", "sans-serif"],
+        display: ["Arial Black", "Arial", "sans-serif"],
+        mono: ["Courier New", "Courier", "monospace"],
       },
     },
   },

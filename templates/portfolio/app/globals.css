@@ -3,5 +3,54 @@
 @tailwind utilities;
 
 body {
-  @apply bg-paper text-ink;
+  background-color: #ffffff;
+  color: #0C0F0A;
+}
+
+* {
+  border-radius: 0 !important;
+}
+
+/* ── Skill badge micro-animations ───────────────────────────── */
+
+@keyframes popIn {
+  0%   { transform: translateY(10px) scale(0.88); opacity: 0; }
+  70%  { transform: translateY(-2px) scale(1.03); opacity: 1; }
+  100% { transform: translateY(0)    scale(1);    opacity: 1; }
+}
+
+.skill-badge {
+  animation: popIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  transition:
+    background-color 0.12s ease,
+    box-shadow       0.12s ease,
+    transform        0.12s ease,
+    color            0.12s ease,
+    border-color     0.12s ease;
+}
+
+.skill-badge:hover {
+  transform: translate(-3px, -3px) scale(1.04);
+}
+
+/* Cycle through the 3 accent colors */
+.skill-badge:nth-child(3n + 1):hover {
+  background-color: #FF206E;
+  border-color:     #FF206E;
+  box-shadow:       5px 5px 0 #FBFF12;
+  color:            #FFFFFF;
+}
+
+.skill-badge:nth-child(3n + 2):hover {
+  background-color: #FBFF12;
+  border-color:     #FBFF12;
+  box-shadow:       5px 5px 0 #FF206E;
+  color:            #0C0F0A;
+}
+
+.skill-badge:nth-child(3n):hover {
+  background-color: #41EAD4;
+  border-color:     #41EAD4;
+  box-shadow:       5px 5px 0 #FBFF12;
+  color:            #0C0F0A;
 }
